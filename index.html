@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>James Lai | Data Analyst</title>
+
+  <!-- CSS -->
   <style>
     /* Reset - removes browser default ugly spacing */
     * {
@@ -77,6 +79,67 @@
     margin-bottom: 0.8rem;
   }
 
+  //* Home hero section */
+  #home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .eyebrow {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+    color: #d0271d;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    color: #888;
+    margin-top: 0.3rem;
+  }
+
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn-primary {
+    background-color: #d0271d;
+    color: white;
+    padding: 0.7rem 1.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .btn-primary:hover {
+    background-color: #a01e16;
+  }
+
+  .btn-secondary {
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.7rem 1.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .btn-secondary:hover {
+    border-color: #aaa;
+    color: white;
+  }
   </style>
 </head>
 <body>
@@ -94,9 +157,14 @@
 
   <!-- HOME -->
   <section id="home">
+    <p class="eyebrow">Hi, I'm
     <h1>James Lai</h1>
-    <p>From Ammunition to Analytics, Driven by Curiousity</p>
-    <p>Data Analyst | Python • Tableau • SQL</p>
+    <p class="tagline">From Ammunition to Analytics, Driven by Curiousity</p>
+    <p class="subtitle">Data Analyst | Python • Tableau • SQL | Ex-SAF | Open to Work</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
   </section>
 
   <!-- PROJECTS -->
