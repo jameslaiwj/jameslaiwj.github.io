@@ -24,21 +24,33 @@
 
   /* Hero grid with photo */
     .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      gap: 4rem;
-    }
-  
-    .hero-image img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: top;
-      border: 4px solid #e0e0e0;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 4px solid #e0e0e0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
     
     /* Navigation Bar */
     nav {
@@ -102,8 +114,7 @@
   #home {
     min-height: 90vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 
   .eyebrow {
@@ -156,8 +167,9 @@
   }
 
   .btn-secondary:hover {
-    border-color: #aaa;
-    color: white;
+    border-color: #333;
+    color: #333;
+    background-color: #f0ede8;
   }
 
    /* Section intro */
@@ -357,13 +369,15 @@
   <!-- HOME -->
 <section id="home">
   <div class="hero-grid">
-    <p class="eyebrow">👋 Hi, I'm
-    <h1>James Lai</h1>
-    <p class="tagline">From Ammunition to Analytics, Driven by Curiosity</p>
-    <p class="subtitle">Data Analyst | Python • Tableau • SQL | Ex-SAF | Open to Work</p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn-primary">View My Work</a>
-      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    <div class="hero-text">
+      <p class="eyebrow">👋 Hi, I'm
+      <h1>James Lai</h1>
+      <p class="tagline">From Ammunition to Analytics, Driven by Curiosity</p>
+      <p class="subtitle">Data Analyst | Python • Tableau • SQL | Ex-SAF | Open to Work</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
     </div>
     <div class="hero-image">
       <img src="Profile.png" alt="James Lai"/>
