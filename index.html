@@ -67,6 +67,7 @@
       position: sticky;
       top: 0;
       transition: box-shadow 0.3s ease;
+      z-index: 1000;
     }
 
     nav.scrolled {
@@ -382,6 +383,7 @@
   /* Tableau embed */
   .tableau-embed {
     margin-top: 1.5rem;
+    overflow-x:auto;
   }
 
   .embed-label {
@@ -456,7 +458,7 @@
     <!-- Live Tableau Embed -->
   <div class="tableau-embed">
     <p class="embed-label">🔴 Live Interactive Dashboard</p>
-    <p class="embed-hint">💡 5 tabs inside — Emotion Distribution, Feature Importance Rankings, Model Performance Comparison, Production Insights Explorer and Real-World Validation. Click the tabs at the top to explore.</p>
+    <p class="embed-hint">💡 5 dashboards inside. Click the tabs at the top to explore. For the best experience, click <strong>Full Screen</strong> (bottom-right of the dashboard).</p>
     <div class='tableauPlaceholder' id='viz1773663463919' style='position: relative'>
       <noscript>
         <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/Ta/Tableau_Interactive_Dashboard-Server/4_ProductionInsightsExplorer/1_rss.png' style='border: none' /></a>
