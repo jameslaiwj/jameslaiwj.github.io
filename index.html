@@ -405,6 +405,24 @@
       border-radius: 0 4px 4px 0;
       margin-bottom: 1rem !important;
     }
+
+    .btn-tableau {
+      display: inline-block;
+      margin-bottom: 1rem;
+      background: #f0ede8;
+      border: 1px solid #d0271d;
+      color: #d0271d;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+    
+    .btn-tableau:hover {
+      background: #d0271d;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -460,8 +478,10 @@
     <!-- Live Tableau Embed -->
   <div class="tableau-embed">
     <p class="embed-label">🔴 Live Interactive Dashboard</p>
-    <p class="embed-hint">💡 5 dashboards inside. Click the tabs at the top to explore. For the best experience, click <strong>Full Screen</strong> (bottom-right of the dashboard).</p>
-    <div class='tableauPlaceholder' id='viz1773663463919' style='position: relative'>
+    <p class="embed-hint">💡 5 dashboards inside. Click the tabs at the top to explore. On mobile or can't see the full chart? Use the button below.</p>
+    <a href="https://public.tableau.com/app/profile/jameslaiwj/vizzes" target="_blank" class="btn-tableau">⛶ Open Full Dashboard</a>
+    <div style="overflow-x: auto; overflow-y: hidden; width: 100%;">
+      <div class='tableauPlaceholder' id='viz1773663463919' style='position: relative'>
       <noscript>
         <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/Ta/Tableau_Interactive_Dashboard-Server/4_ProductionInsightsExplorer/1_rss.png' style='border: none' /></a>
       </noscript>
@@ -480,6 +500,7 @@
         <param name='display_count' value='yes' />
         <param name='language' value='en-US' />
       </object>
+      </div>
     </div>
     <script type='text/javascript'>
       var divElement = document.getElementById('viz1773663463919');
