@@ -207,6 +207,70 @@
   .project-links a:hover {
     border-bottom-color: #d0271d;
   }
+
+    /* About section */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .about-text p {
+    margin-bottom: 1rem;
+  }
+
+  .about-text h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #888;
+    margin: 2rem 0 1rem;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .skill-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #d0271d;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .skill-group p {
+    color: #bbb;
+    font-size: 0.9rem;
+  }
+
+  .about-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-card-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #d0271d;
+    margin-bottom: 1rem !important;
+  }
+
+  .about-card p {
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .about-card strong {
+    color: #f0f0f0;
+  }
   </style>
 </head>
 <body>
@@ -286,6 +350,20 @@
             <p class="skill-label">Techniques</p>
             <p>Predictive Modeling | EDA | Dashboard Design</p>
           </div>
+        </div>
+      </div>
+
+      <div class="about-side">
+        <div class="about-card">
+          <p class="about-card-label">🎓 Education</p>
+          <p><strong>General Assembly Singapore</strong><br/>Data Analytics Bootcamp, 2025-2026</strong></p>
+          <p><strong>Heicoders Academy</strong><br/>AI100 Python Certification, 2025</strong></p>
+          <p><strong>Temasek Polytechnic</strong><br/>Diploma in Information Technology, 2020</strong></p>
+        </div>
+        <div class="about-card">
+          <p class="about-card-label">⚡ Outside Work</p>
+          <p>Badminton | Gym | Swimming | Dancing</p>
+          <p style="margin-top:0.5rem; color:#888; font-size:0.85rem;">Same discipline, different arena.</p>
         </div>
       </div>
     </div>
