@@ -14,6 +14,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behaviour: smooth;
+    }
+
     /* Base body styling */
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -62,6 +66,11 @@
       border-bottom: 1px solid #e0e0e0;
       position: sticky;
       top: 0;
+      transition: box-shadow 0.3s ease;
+    }
+
+    nav.scrolled {
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
     }
 
     nav a {
@@ -84,7 +93,7 @@
   }
 
   nav ul a:hover {
-    color: #f0f0f0;
+    color: #1a1a1a;
   }
 
   /* Sections */
@@ -498,4 +507,15 @@
   </section>
   
 </body>
+<!-- Javascript -->
+<script>
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
 </html>
