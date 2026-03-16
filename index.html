@@ -271,6 +271,55 @@
   .about-card strong {
     color: #f0f0f0;
   }
+
+    /* Contact section */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: border-color 0.2s;
+  }
+
+  .contact-card:hover {
+    border-color: #d0271d;
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+  }
+
+  .contact-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #d0271d;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .contact-card p {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .contact-footer {
+    text-align: center;
+    color: #555;
+    font-size: 0.85rem;
+    margin-top: 3rem;
+  }
   </style>
 </head>
 <body>
@@ -373,7 +422,41 @@
   <!-- CONTACT -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Coming soon!</p>
+    <p class="contact-grid">Open to Data Analyst roles in Singapore. Feel free to reach out.</p>
+
+    <div class="contact-grid">
+      <a href="mailto:jameslai1999@gmail.com" class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <div>
+          <p class="contact-label">Email</p>
+          <p>jameslai1999@gmail.com</p>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/jameslaiwj/" target="_blank" class="contact-card">
+        <span class="contact-icon">💼</span>
+        <div>
+          <p class="contact-label">LinkedIn</p>
+          <p>linkedin.com/in/jameslaiwj</p>
+        </div>
+      </a>
+      <a href="https://github.com/jameslaiwj" target="_blank" class="contact-card">
+        <span class="contact-icon">🐙</span>
+        <div>
+          <p class="contact-label">GitHub</p>
+          <p>github.com/jameslaiwj</p>
+        </div>
+      </a>
+      <a href="https://public.tableau.com/app/profile/jameslaiwj/vizzes" target="_blank" class="contact-card">
+        <span class="contact-icon">📊</span>
+        <div>
+          <p class="contact-label">Tableau Public</p>
+          <p>James Lai's Dashboards</p>
+        </div>
+      </a>
+    </div>
+
+    <p class="contact-footer">Based in Singapore | Available immediately</p>
   </section>
   
 </body>
