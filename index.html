@@ -100,8 +100,8 @@
   section {
     padding: 5rem 3rem;
     max-width: 900px;
-    margin: 0 auto
-    background-color: #f8f8f5
+    margin: 0 auto;
+    background-color: #f8f8f5;
     scroll-margin-top: 70px;
   }
 
@@ -365,6 +365,32 @@
     font-size: 0.85rem;
     margin-top: 3rem;
   }
+
+    /* Project preview image */
+  .project-preview {
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+  }
+
+  .project-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  /* Tableau embed */
+  .tableau-embed {
+    margin-top: 1.5rem;
+  }
+
+  .embed-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #d0271d;
+    margin-bottom: 0.8rem !important;
+  }
   </style>
 </head>
 <body>
@@ -417,8 +443,60 @@
         <a href="https://github.com/jameslaiwj/emotion-music-tagger" target="_blank">View Project</a>
         <a href="https://public.tableau.com/app/profile/jameslaiwj/vizzes" target="_blank">View Dashboard</a>
       </div>
+
+    <!-- Dashboard Preview Image -->
+    <div class="project-preview">
+      <img src="thumbnail-music-tagger.png" alt="Emotion Distribution Dashboard Preview"/>
     </div>
 
+    <!-- Live Tableau Embed -->
+  <div class="tableau-embed">
+    <p class="embed-label">🔴 Live Dashboard</p>
+    <div class='tableauPlaceholder' id='viz1773663463919' style='position: relative'>
+      <noscript>
+        <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/Ta/Tableau_Interactive_Dashboard-Server/4_ProductionInsightsExplorer/1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Tableau_Interactive_Dashboard-Server&#47;4_ProductionInsightsExplorer' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Ta/Tableau_Interactive_Dashboard-Server/4_ProductionInsightsExplorer/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1773663463919');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.minWidth='1000px';
+        vizElement.style.maxWidth='100%';
+        vizElement.style.minHeight='850px';
+        vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth='1000px';
+        vizElement.style.maxWidth='100%';
+        vizElement.style.minHeight='850px';
+        vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
+      } else {
+        vizElement.style.width='100%';
+        vizElement.style.minHeight='750px';
+        vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+</div>
+    
     <!-- Other Projects, same format coming soon -->
     
   </section>
