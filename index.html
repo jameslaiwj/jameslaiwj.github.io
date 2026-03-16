@@ -101,7 +101,8 @@
     padding: 5rem 3rem;
     max-width: 900px;
     margin: 0 auto
-    background-color: #f8f8f5;
+    background-color: #f8f8f5
+    scroll-margin-top: 70px;
   }
 
   h1 {
@@ -122,9 +123,12 @@
 
   /* Home hero section */
   #home {
-    min-height: 90vh;
+    min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
+    background-color: #f8f8f5;
+    max-width: 100%;
+    padding: 0 10%;
   }
 
   .eyebrow {
