@@ -423,6 +423,76 @@
       background: #d0271d;
       color: white;
     }
+
+    /* ── MOBILE RESPONSIVE ── */
+    @media (max-width: 768px) {
+
+    /* Nav */
+    nav {
+      padding: 1rem 1.5rem;
+    }
+
+    nav ul {
+      gap: 1rem;
+    }
+
+    nav ul a {
+      font-size: 0.8rem;
+    }
+
+    /* Home */
+    #home {
+      padding: 0 5%;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    .hero-image {
+      order: -1;
+    }
+
+    .hero-image img {
+      width: 160px;
+      height: 160px;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 3rem 1.5rem;
+    }
+
+    /* Projects */
+    .project-card {
+      padding: 1.5rem;
+    }
+
+    /* About */
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+  }
   </style>
 </head>
 <body>
